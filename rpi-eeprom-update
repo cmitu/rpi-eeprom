@@ -29,9 +29,9 @@ ENABLE_VL805_UPDATES=${ENABLE_VL805_UPDATES:-1}
 CM4_ENABLE_RPI_EEPROM_UPDATE=${CM4_ENABLE_RPI_EEPROM_UPDATE:-0}
 RPI_EEPROM_UPDATE_CONFIG_TOOL="${RPI_EEPROM_UPDATE_CONFIG_TOOL:-raspi-config}"
 
-# Self-update is preferred to using recovery.bin because it avoids modifiy the
+# Self-update is preferred to using recovery.bin because it avoids modifying the
 # boot partition in order to rename recovery.bin after use. Since the 2711 ROM
-# does not support network or USB MSD loading of recovery.bin self-update has to
+# does not support network nor USB MSD loading of recovery.bin, self-update has to
 # be used with other boot modes anyway.
 
 # If RPI_EEPROM_SELF_UPDATE=1 then avoid installing recovery.bin so long as the
